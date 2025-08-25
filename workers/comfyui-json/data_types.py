@@ -44,7 +44,7 @@ class ComfyWorkflowData(ApiPayload):
                     "seed": random.randint(0, sys.maxsize),
                 }
             },
-            expected_time=8  # Test data: expect 8 seconds on RTX4090 for a simple text to image workflow
+            expected_time=1  # Test data: expect 8 seconds on RTX4090 for a simple text to image workflow
         )
 
     def generate_payload_json(self) -> Dict[str, Any]:
